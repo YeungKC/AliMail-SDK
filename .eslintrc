@@ -4,8 +4,5 @@
     "es6": true,
     "jest/globals": true
   },
-  "plugins": ["jest"],
-  "rules": {
-    "jest/no-new": 0
-  }
+  "plugins": ["jest"]
 }
