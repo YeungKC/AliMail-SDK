@@ -8,7 +8,7 @@ const { throwError, getParamsArray, signature } = require('./lib/Utils')
 const url = 'https://dm.aliyuncs.com/'
 const FORMAT_TYPE = ['json', 'xml']
 
-class AliEmailSDK {
+class AliMailSDK {
   constructor ({
     AccessKeyId, AccessKeySecret, Version,
     SignatureVersion = '1.0', SignatureMethod = 'HMAC-SHA1', Format = 'json', RegionId
@@ -104,4 +104,4 @@ class AliEmailSDK {
   }
 }
 
-module.exports = AliEmailSDK
+module.exports = AliMailSDK
