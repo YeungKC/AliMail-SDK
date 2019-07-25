@@ -3,14 +3,10 @@
 const axios = require('axios')
 const uuid = require('uuid/v4')
 
-const { getParamsArray, signature } = require('./lib/Utils')
+const { throwError, getParamsArray, signature } = require('./lib/Utils')
 
 const url = 'https://dm.aliyuncs.com/'
 const FORMAT_TYPE = ['json', 'xml']
-
-function throwError (message) {
-  throw Error(message)
-}
 
 class AliEmailSDK {
   constructor ({
