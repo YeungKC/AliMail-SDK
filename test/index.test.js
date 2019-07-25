@@ -34,7 +34,7 @@ describe('AliMail-SDK', function () {
         AccessKeyId: process.env.AccessKeyId,
         AccessKeySecret: process.env.AccessKeySecret,
         Version: '2017-06-22',
-        RegionId: 'cn-hangzhou',
+        RegionId: 'cn-hangzhou'
       })
     } catch (e) {
       expect(e.message).toBe('if config.Version is 2017-06-22 regionId must not be cn-hangzhou')
@@ -48,7 +48,7 @@ describe('AliMail-SDK', function () {
       new AliMailSDK({
         AccessKeyId: process.env.AccessKeyId,
         AccessKeySecret: process.env.AccessKeySecret,
-        Version: '2019-06-11',
+        Version: '2019-06-11'
       })
     } catch (e) {
       expect(e.message).toBe('config.Version must be 2015-11-23 or 2017-06-22')
@@ -61,7 +61,7 @@ describe('AliMail-SDK', function () {
     mailer = new AliMailSDK({
       AccessKeyId: process.env.AccessKeyId,
       AccessKeySecret: process.env.AccessKeySecret,
-      Version: '2015-11-23',
+      Version: '2015-11-23'
     })
   })
 
@@ -86,7 +86,7 @@ describe('AliMail-SDK', function () {
       FromAlias: 'alias',
       Subject: 'subject',
       TagName: 'tagName',
-      HtmlBody: '<html>HtmlBody</html>',
+      HtmlBody: '<html>HtmlBody</html>'
     })
 
     expect(res.status).toBe(200)
@@ -112,7 +112,7 @@ describe('AliMail-SDK', function () {
       Action: 'batch',
       AccountName: 'admin@alimail.yeungkc.com',
       TemplateName: 'test',
-      ReceiversName: 'listname',
+      ReceiversName: 'listname'
     })
 
     expect(res.status).toBe(200)

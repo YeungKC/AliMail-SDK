@@ -8,12 +8,12 @@ const { getParamsArray, signature } = require('./lib/Utils')
 const url = 'https://dm.aliyuncs.com/'
 const FORMAT_TYPE = ['json', 'xml']
 
-function throwError(message) {
+function throwError (message) {
   throw Error(message)
 }
 
 class AliEmailSDK {
-  constructor({
+  constructor ({
     AccessKeyId, AccessKeySecret, Version,
     SignatureVersion = '1.0', SignatureMethod = 'HMAC-SHA1', Format = 'json', RegionId
   }) {
@@ -46,10 +46,10 @@ class AliEmailSDK {
     if (!FORMAT_TYPE.includes(this.config.Format)) throwError('config.Format must be json or xml')
   }
 
-  async send({
+  async send ({
     Timestamp = new Date().toISOString(), SignatureNonce = uuid(), Action, AccountName, AddressType = 0, TagName, ClickTrace = 0,
     ReplyToAddress = false, ToAddress, FromAlias, Subject, HtmlBody, TextBody,
-    TemplateName, ReceiversName,
+    TemplateName, ReceiversName
   }, requestConfig = {}) {
     !AccountName && throwError('config.AccountName is required')
 
@@ -60,7 +60,7 @@ class AliEmailSDK {
       AccountName,
       AddressType,
       TagName,
-      ClickTrace,
+      ClickTrace
     }
 
     switch (Action.toLowerCase()) {
@@ -74,7 +74,7 @@ class AliEmailSDK {
           FromAlias,
           Subject,
           HtmlBody,
-          TextBody,
+          TextBody
         }
         break
       case 'batch':
@@ -85,7 +85,7 @@ class AliEmailSDK {
           ...params,
           Action: 'BatchSendMail',
           TemplateName,
-          ReceiversName,
+          ReceiversName
         }
         break
       default:
@@ -102,8 +102,8 @@ class AliEmailSDK {
       responseType: this.config.Format,
       method: 'post',
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
+        'Content-Type': 'application/x-www-form-urlencoded'
+      }
     })
   }
 }
