@@ -2,6 +2,8 @@
 
 阿里云邮件 SDK
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4b8c29d9480f44b387201a88233b9a36)](https://www.codacy.com/app/YeungKC/AliMail-SDK?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=YeungKC/AliMail-SDK&amp;utm_campaign=Badge_Grade)
+
 ## install
 
 yarn add alimail-sdk
