@@ -6,7 +6,9 @@
 
 ## install
 
+```bash
 yarn add alimail-sdk
+```
 
 ## Example
 
