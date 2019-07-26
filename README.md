@@ -1,6 +1,6 @@
 # AliMail-SDK
 
-阿里云邮件 SDK
+Use [AliYun DirectMail service](https://help.aliyun.com/document_detail/29434.html) with JavaScript
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4b8c29d9480f44b387201a88233b9a36)](https://www.codacy.com/app/YeungKC/AliMail-SDK?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=YeungKC/AliMail-SDK&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/YeungKC/AliMail-SDK/branch/master/graph/badge.svg)](https://codecov.io/gh/YeungKC/AliMail-SDK)

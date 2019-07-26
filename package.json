@@ -1,14 +1,17 @@
 {
   "name": "alimail-sdk",
-  "description": "阿里云邮件 SDK",
-  "version": "1.0.4",
+  "description": "Use AliYun DirectMail service with JavaScript",
+  "version": "1.0.5",
   "main": "lib/index.js",
   "license": "MIT",
   "keywords": [
-    "ali",
-    "email",
-    "aliemail",
-    "alimail"
+    "Ali",
+    "AliYun",
+    "DirectMail",
+    "Direct Mail",
+    "Email",
+    "AliEmail",
+    "AliMail"
   ],
   "files": [
     "lib"
