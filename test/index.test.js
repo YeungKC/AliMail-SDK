@@ -57,6 +57,21 @@ describe('AliMail-SDK', function () {
     }
   })
 
+  test('init format is error fail', done => {
+    try {
+      new AliMailSDK({
+        AccessKeyId: process.env.AccessKeyId,
+        AccessKeySecret: process.env.AccessKeySecret,
+        Version: '2017-06-22',
+        Format: 'yaml'
+      })
+    } catch (e) {
+      expect(e.message).toBe('config.Format must be json or xml')
+
+      done()
+    }
+  })
+
   beforeAll(() => {
     mailer = new AliMailSDK({
       AccessKeyId: process.env.AccessKeyId,
