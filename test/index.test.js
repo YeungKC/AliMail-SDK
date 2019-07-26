@@ -82,7 +82,7 @@ describe('AliMail-SDK', function () {
     const res = await mailer.send({
       Action: 'single',
       AccountName: 'admin@alimail.yeungkc.com',
-      ToAddress: 'alimail@YeungKC.com',
+      ToAddress: 'foo@alimail.yeungkc.com',
       FromAlias: 'alias',
       Subject: 'subject',
       TagName: 'tagName',
