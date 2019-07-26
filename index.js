@@ -62,6 +62,7 @@ class AliMailSDK {
     switch (Action.toLowerCase()) {
       case 'single':
         !ToAddress && throwError('config.ToAddress is required')
+
         params = {
           ...params,
           Action: 'SingleSendMail',

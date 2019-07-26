@@ -33,11 +33,11 @@ const AliMailSDK = require('alimail-sdk');
       ReplyToAddress: false, // 默认 false
       AddressType: 0, // 默认 0
       ToAddress: 'alimail@YeungKC.com',
-      FromAlias: 'alias',
-      Subject: 'subject',
-      TagName: 'test',
-      HtmlBody: '<html>HtmlBody</html>',
-      TextBody: 'TextBody',
+      FromAlias: 'alias', // 可选
+      Subject: 'subject', // 可选
+      TagName: 'test', // 可选
+      HtmlBody: '<html>HtmlBody</html>', // 可选
+      TextBody: 'TextBody', // 可选
       ClickTrace: '0' // 默认 0
       // Timestamp: new Date().toISOString(), // 默认 new Date().toISOString()
       // SignatureNonce: uuid() // 默认 UUID
