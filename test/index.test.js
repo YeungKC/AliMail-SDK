@@ -66,18 +66,20 @@ describe('AliMail-SDK', function () {
   })
 
   test('send action fail', async done => {
-    const res = await mailer.send({
-      AccountName: 'admin@alimail.yeungkc.com',
-      ToAddress: 'foo@alimail.yeungkc.com',
-      FromAlias: 'alias',
-      Subject: 'subject',
-      TagName: 'tagName',
-      HtmlBody: '<html>HtmlBody</html>'
-    })
+    try {
+      await mailer.send({
+        AccountName: 'admin@alimail.yeungkc.com',
+        ToAddress: 'foo@alimail.yeungkc.com',
+        FromAlias: 'alias',
+        Subject: 'subject',
+        TagName: 'tagName',
+        HtmlBody: '<html>HtmlBody</html>'
+      })
+    } catch (e) {
+      expect(e.message).toBe('config.Action must be single or batch')
 
-    expect(res.status).toBe(200)
-
-    done()
+      done()
+    }
   })
 
   test('send single param fail', async done => {
