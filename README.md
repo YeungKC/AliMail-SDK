@@ -3,6 +3,13 @@
 阿里云邮件 SDK
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4b8c29d9480f44b387201a88233b9a36)](https://www.codacy.com/app/YeungKC/AliMail-SDK?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=YeungKC/AliMail-SDK&amp;utm_campaign=Badge_Grade)
+[![codecov](https://codecov.io/gh/YeungKC/AliMail-SDK/branch/master/graph/badge.svg)](https://codecov.io/gh/YeungKC/AliMail-SDK)
+[![Build Status](https://travis-ci.org/YeungKC/AliMail-SDK.svg?branch=master)](https://travis-ci.org/YeungKC/AliMail-SDK)
+[![NPM version](https://img.shields.io/npm/v/alimail-sdk.svg?style=flat-square)](https://npmjs.org/package/alimail-sdk)
+[![NPM download](https://img.shields.io/npm/dm/alimail-sdk.svg?style=flat-square)](https://npmjs.org/package/alimail-sdk)
+[![Known Vulnerabilities](https://snyk.io/test/npm/alimail-sdk/badge.svg)](https://snyk.io/test/npm/alimail-sdk)
+[![dependencies Status](https://david-dm.org/yeungkc/alimail-sdk/status.svg)](https://david-dm.org/yeungkc/alimail-sdk)
+[![devDependencies Status](https://david-dm.org/yeungkc/alimail-sdk/dev-status.svg)](https://david-dm.org/yeungkc/alimail-sdk?type=dev)
 
 ## install
 
