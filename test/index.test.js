@@ -1,4 +1,4 @@
-const AliMailSDK = require('../index')
+const AliMailSDK = require('../lib')
 
 describe('AliMail-SDK', function () {
   let mailer
