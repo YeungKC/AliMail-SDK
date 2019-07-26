@@ -1,7 +1,7 @@
 {
   "name": "alimail-sdk",
   "description": "阿里云邮件 SDK",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "lib/index.js",
   "license": "MIT",
   "keywords": [
