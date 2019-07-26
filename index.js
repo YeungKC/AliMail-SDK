@@ -39,11 +39,11 @@ class AliMailSDK {
     }
     this.AccessKeySecret = AccessKeySecret
 
-    if (!FORMAT_TYPE.includes(this.config.Format)) throwError('config.Format must be json or xml')
+    !FORMAT_TYPE.includes(this.config.Format) && throwError('config.Format must be json or xml')
   }
 
   async send ({
-    Timestamp = new Date().toISOString(), SignatureNonce = uuid(), Action, AccountName, AddressType = 0, TagName, ClickTrace = 0,
+    Timestamp = new Date().toISOString(), SignatureNonce = uuid(), Action = '', AccountName, AddressType = 0, TagName, ClickTrace = 0,
     ReplyToAddress = false, ToAddress, FromAlias, Subject, HtmlBody, TextBody,
     TemplateName, ReceiversName
   }, requestConfig = {}) {
