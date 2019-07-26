@@ -1,4 +1,4 @@
-# AliEmail-SDK
+# AliMail-SDK
 
 阿里云邮件 SDK
 
