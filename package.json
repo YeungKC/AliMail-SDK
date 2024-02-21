@@ -28,7 +28,7 @@
     "url": "https://github.com/YeungKC/AliMail-SDK.git"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.28.0",
     "uuid": "^7.0.2"
   },
   "devDependencies": {
